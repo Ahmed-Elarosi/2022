@@ -1,0 +1,48 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+#null,
+#right-2 {
+  animation: null 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+#mid-2,
+#left-2 {
+  animation: one 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes null {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes one {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
